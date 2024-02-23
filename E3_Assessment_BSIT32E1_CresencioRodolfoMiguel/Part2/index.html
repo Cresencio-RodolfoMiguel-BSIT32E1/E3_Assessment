@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      body {
+        background-color: rgb(121, 196, 71);
+      }
+      h1,
+      h2,
+      h3 {
+        padding: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    li {
+        list-style-type: disc;
+    }
+    </style>
+  </head>
+
+  <body>
+    <h1>Welcome to my home page</h1>
+    <p>My name is Rodolfo Miguel Cresencio.</p>
+    <img src="photo.jpg" alt="Description of the image" />
+    <ul>
+      <li>Age: 2-</li>
+      <li>Bday: 03/04/2---</li>
+    </ul>
+    <p>
+      This is a <a href="https://github.com/Cresencio-RodolfoMiguel-BSIT32E1">link</a> to an
+      external website.
+    </p>
+    <h3 style="color: rgb(247, 248, 210)">Hello World!</h3>
+    <button onclick="checkNumber()">Check Number</button>
+    <p id="result"></p>
+
+    <script>
+      function checkNumber() {
+        var number = parseInt(prompt("Enter a number:"));
+        if (isNaN(number)) {
+          document.getElementById("result").textContent =
+            "Please enter a valid number.";
+        } else {
+          if (number % 2 === 0) {
+            document.getElementById("result").textContent =
+              number + " is even.";
+          } else {
+            document.getElementById("result").textContent = number + " is odd.";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
